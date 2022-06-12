@@ -11,7 +11,8 @@ function addTask() {
 
     addDomElement( taskContainer, taskList);
     addDomElement( task, taskContainer);
-    addDomElement( deleteButton, taskContainer);    
+    addDomElement( deleteButton, taskContainer);
+    returnData();    
 
     deleteButton.addEventListener('click', removeTask);
     taskContainer.addEventListener('click', editTask);
