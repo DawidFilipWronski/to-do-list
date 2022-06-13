@@ -3,7 +3,10 @@ const addTaskButton = document.querySelector('.addTask');
 const taskList = document.querySelector('.taskList');
 
 function addTask() {
-    
+    if ( taskInput.value == '' ) {
+        return false;
+    }
+    else {
     const deleteButton = createDomElement('button', 'x');
     const taskContainer = createDomElement('div', '');
     const task = createDomElement('p', getTaskContent() );
@@ -33,6 +36,7 @@ function addTask() {
     }
     //clear input after add new task to prep for next one
     clearValue(taskInput);
+}
 }
 
 function getTaskContent () {

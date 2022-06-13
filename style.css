@@ -1,9 +1,39 @@
-div div {
-    background-color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
-div p {
-    background-color: green;
-}
+/* JS class */
 .hide {
     display: none;
+}
+body{
+    background-color: rgb(137, 218, 171); 
+}
+.container {   
+    min-height: 100vh;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    border: 2px solid black;
+}
+.input-container {
+    width: 50%;   
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+input.task {
+    width: 70%;
+    font-size: 26px;
+    border: 8px solid transparent;
+    border-radius: 4px;
+}
+input.task:focus {
+    outline: none;
+}
+button.addTask{
+    padding: 8px;
+    font-size: 26px;
+    background-color: rgb(236, 153, 97);
+    border: none;
 }
